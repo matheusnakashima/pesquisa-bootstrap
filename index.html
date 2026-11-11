@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exemplos Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Barra de navegação responsiva -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio">Meu Projeto</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#containers">Containers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#componentes">Componentes</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="inicio" class="bg-primary text-white py-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Conhecendo o Bootstrap</h1>
+      <p class="lead mb-0">Exemplos de containers, navegação e cards usando classes prontas.</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <section id="containers" class="mb-5">
+      <h2 class="mb-3">1. Containers</h2>
+      <div class="container bg-light border rounded p-4 mb-3">
+        <h3 class="h5">.container</h3>
+        <p class="mb-0">Área centralizada com largura máxima que varia conforme o tamanho da tela.</p>
+      </div>
+      <div class="container-fluid bg-dark text-white rounded p-4">
+        <h3 class="h5">.container-fluid</h3>
+        <p class="mb-0">Área que ocupa 100% da largura disponível.</p>
+      </div>
+    </section>
+
+    <section id="componentes" class="mb-5">
+      <h2 class="mb-3">2. Cards e grid</h2>
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title h5">Responsividade</h3>
+              <p class="card-text">O grid adapta as colunas ao tamanho da tela.</p>
+              <a class="btn btn-primary" href="https://getbootstrap.com/docs/5.3/layout/grid/">Ver documentação</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title h5">Componentes prontos</h3>
+              <p class="card-text">Cards, botões e menus podem ser montados com classes Bootstrap.</p>
+              <a class="btn btn-outline-primary" href="https://getbootstrap.com/docs/5.3/components/">Ver componentes</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title h5">Produtividade</h3>
+              <p class="card-text">Classes reutilizáveis reduzem a necessidade de escrever CSS do zero.</p>
+              <a class="btn btn-success" href="https://getbootstrap.com/">Site oficial</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-light border-top py-3">
+    <div class="container text-center text-secondary">
+      <small>Projeto acadêmico demonstrativo — Bootstrap 5.3.8</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
